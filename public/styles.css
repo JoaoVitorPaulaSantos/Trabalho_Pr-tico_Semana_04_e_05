@@ -1,60 +1,68 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-body{
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
     background-color: #8a2be2;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.6rem;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-header{
+header {
     background-color: #000000;
+}
+
+.navbar {
     display: flex;
-    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
 }
 
-header img{
-    position: absolute;
+.navbar .logo {
+    width: 50px;
 }
 
-header nav ul{
+.nav-links {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem;
     gap: 1rem;
-}
-
-header nav ul li{
     list-style-type: none;
 }
 
-header nav ul li a{
+.nav-links li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-.container{
-    display: flex;
-    padding-top: 1rem;
-    padding-right: 1rem;
-    flex-grow: 1;
-    overflow-y: auto;
+.menu-toggle,
+#menu-toggle-checkbox {
+    display: none;
 }
 
-main{
+.container {
+    display: flex;
+    flex-grow: 1;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+main {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
 }
 
-.imagem-destaque{
+.imagem-destaque {
     display: block;
     max-width: 100%;
     height: auto;
@@ -64,7 +72,7 @@ main{
     margin-bottom: 1rem;
 }
 
-main section:nth-of-type(2){
+.artigos {
     display: flex;
     flex-wrap: wrap; 
     gap: 1rem;
@@ -73,7 +81,7 @@ main section:nth-of-type(2){
     width: 100%;
 }
 
-main section:nth-of-type(2) article{
+.artigos article {
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
@@ -82,7 +90,7 @@ main section:nth-of-type(2) article{
     padding: 0.6rem;
 }
 
-main section:nth-of-type(2) article img{
+.artigos article img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -92,14 +100,13 @@ main section:nth-of-type(2) article img{
     box-shadow: 0.1rem 0.1rem #302e31;
 }
 
-main section:nth-of-type(2) article p{
+.artigos article p {
     font-size: 0.6rem;
     color: #ffffff;
-    text-align: center;
     text-align: justify;
 }
 
-aside{
+aside {
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -110,35 +117,109 @@ aside{
     border-radius: 1rem;
 }
 
-aside h2{
+aside h2 {
     color: #ffffff;
     text-decoration: underline;
 }
 
-aside ul li{
+aside ul li {
     list-style-type: none;
     padding-bottom: 0.5rem;
 }
 
-aside ul li a{
+aside ul li a {
     text-decoration: none;
     color: #ffffff;
 }
 
-footer{
+footer {
+    display: flex;
     font-size: 0.5rem;
     padding: 1rem;
     color: white;
-    text-align: end;
+    gap: 1rem;
+    justify-content: flex-end;
 }
 
-a:hover{
+footer p {
+    margin-left: auto;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
     color: #000000;
 }
 
-main section:nth-of-type(2) article:hover{
+.artigos article:hover {
     background-color: #302e31;
     border: 1.5px solid #ffffff;
 }
 
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        color: #ffffff;
+        cursor: pointer;
+    }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #000000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 10;
+        padding: 1rem 0;
+    }
+
+    .nav-links li {
+        padding: 0.5rem 0;
+    }
+    
+    #menu-toggle-checkbox:checked ~ .nav-links {
+        display: flex;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .container {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    main {
+        width: 100%;
+        flex-grow: 0;
+    }
+    
+    aside {
+        width: 100%;
+        padding-top: 1rem;
+    }
+    
+    .artigos article {
+        flex-basis: 45%;
+    }
+    
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    footer p {
+        margin-left: 0;
+    }
+}

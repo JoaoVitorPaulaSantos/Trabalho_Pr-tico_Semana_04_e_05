@@ -8,14 +8,18 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: João Vitor de Paula Santos
+- Matricula: 900776 
+- Proposta de projeto escolhida: Organizações e Equipes
+- Breve descrição sobre seu projeto: O projeto consiste em um site onde startups publicam seus artigos sobre inovações sobre tecnologia. 
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Tela mobile](Tela%mobile)
+
+![Tela tablet](Tela%tablet)
+
+![Tela desktop](Tela%desktop)
 
 ## Print da versão responsiva com Bootstrap
 
