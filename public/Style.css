@@ -1,0 +1,43 @@
+body {
+    background-color: #8a2be2;
+}
+
+.bg-dark{
+    background-color: black;
+}
+        
+.custom-card, .custom-aside {
+    border: 1.5px solid #302e31;
+    border-radius: 1rem;
+    box-shadow: 0.2rem 0.2rem #302e31;
+    padding: 1rem;
+    color: #ffffff;
+}
+        
+.custom-aside {
+    padding-top: 4rem;
+}
+        
+.custom-footer a {
+    color: #ffffff;
+}
+        
+.custom-footer p {
+    margin: 0;
+}
+        
+@media (max-width: 768px) {
+    .custom-aside {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+            
+    .custom-aside ul {
+        padding-left: 0;
+    }
+}
+        
+.smaller-cards {
+    width: fit-content;
+    margin: 0 auto;
+}
