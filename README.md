@@ -15,12 +15,16 @@ Nessa atividade,vamos evoluir o projeto para que a home-page funcione bem tanto 
 
 ## Print da versão responsiva com CSS puro
 
-![Tela mobile](Tela%mobile)
+![Tela mobile](Tela%20mobile.jpg)
 
-![Tela tablet](Tela%tablet)
+![Tela tablet](Tela%20tablet.jpg)
 
-![Tela desktop](Tela%desktop)
+![Tela desktop](Tela%20desktop.jpg)
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Tela mobile](Mobile.jpg)
+
+![Tela tablet](Tablet.jpg)
+
+![Tela desktop](Desktop.jpg)
